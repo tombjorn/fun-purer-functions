@@ -1,7 +1,4 @@
-function sumArgs() {
-  
-};
-
+function sumArgs() {}
 
 // this function should return the sum of any arguments that are passed to it
 

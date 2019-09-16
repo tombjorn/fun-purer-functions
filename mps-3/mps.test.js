@@ -1,16 +1,9 @@
 describe('MP utils', () => {
-
   describe('createMPIntroductions()', () => {
-    
-    test('', () => {
-      
-    });
+    test('', () => {});
   });
-  
+
   describe('getSurnames()', () => {
-    
-    test('', () => {
-      
-    });
+    test('', () => {});
   });
 });
