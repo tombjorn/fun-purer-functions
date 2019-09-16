@@ -14,11 +14,11 @@ Implement a function that takes an array of objects, each object featuring infor
 const albums = [
   {
     artist: 'Radiohead',
-    discography: [{ title: 'Pablo Honey' }, { title: 'The Bends' },{title: 'OK Computer'}],
+    discography: [{ title: 'Pablo Honey' }, { title: 'The Bends' },{ title: 'OK Computer' }],
   },
   {
     artist: 'Wire'
-    discography: [{title: 'Pink Flag'},{ title: 'Chairs Missing' }]
+    discography: [{ title: 'Pink Flag' },{ title: 'Chairs Missing' }]
   }
 ];
 addAlbumCounts(albums);
