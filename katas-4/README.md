@@ -1,6 +1,6 @@
 # Katas
 
-The following katas each come with a relatively detailed description of what they need to do. You need to devise unit tests for each of these functions.
+The following katas each come with a relatively detailed description of what they need to do. You need to devise unit tests for each of these functions. You can work through these problems in any order you like.
 
 ## `collectLikeTerms()`
 
@@ -41,7 +41,7 @@ Here are some examples to help you build out your test suite:
 - If the number is zero return the array unchanged
 
 ```js
-rotateArray([1, 2, 3], 0); // returns [1,2,3]
+rotateArray([1, 2, 3], 0); // returns [1, 2, 3]
 ```
 
 - If the number is positive return the array rotated x times to the right
@@ -82,7 +82,7 @@ herdTheBabies('bbaBccAC'); // should return 'AaBbbCcc'
 
 ## `caesarCipher`
 
-The function `caesarCipher` should take a string and a number (`shift`) and return a new string with a Caesar cipher applied.
+The function `caesarCipher` should take a string and a number (`shift`) and return a new string with a caesar cipher applied.
 
 A caesar cipher replaces each plaintext letter with a different one a fixed number of places up or down the alphabet.
 
