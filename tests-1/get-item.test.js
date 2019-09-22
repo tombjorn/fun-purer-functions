@@ -1,10 +1,8 @@
-function getItem() {
-  
-};
+function getItem() {}
 
 /*
 
-This function take an array of items and an index.
+This function takes an array of items and an index (number).
 
 The function should return the item at the given index.
 
@@ -14,9 +12,12 @@ If the index is negative it should go through the array items in the opposite di
 
 e.g. getItem(['a','b','c'], 0) should return 'a'
 e.g. getItem(['a','b','c'], 1) should return 'b'
+
 e.g. getItem(['a','b','c'], 3) should return 'a'
+
 e.g. getItem(['a','b','c'], 5) should return 'c'
 e.g. getItem(['a','b','c'], 100) should return 'b'
+
 e.g. getItem(['a','b','c'], -1) should return 'c'
 
 */
