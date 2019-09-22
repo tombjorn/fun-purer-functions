@@ -120,3 +120,7 @@ dabCBAcaDA No further actions can be taken.
 After all possible reactions, the resulting polymer contains 10 units.
 
 `reducePolymer` should return the number of units remaining once the polymer has been fully reacted. For this problem, there is also a large example in the data folder, which can be used for later test cases, for which the function should return 10766.
+
+## `powerSet`
+
+This function takes an array and generates a power set from the given array.

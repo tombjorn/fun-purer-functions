@@ -6,7 +6,7 @@
 
 ## Section 2
 
-- MPs utils 
+- MPs utils
 A suite of problems for formatting, sifting and searching through data
 
 ## Section 3

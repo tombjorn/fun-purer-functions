@@ -13,7 +13,7 @@ Each of the functions below can be thought as a single unit. You can write your 
 
 ## `addFirstAndLastNames`
 
-This function should take an array of MP objects and return an array of strings in the format:
+This function should take an array of MP objects and return an array of MP objects with an additional firstName and lastName property added to each MP object:
 
 ```js
 addFirstAndLastNames([
@@ -113,7 +113,7 @@ addFirstAndLastNames([
 
 ## `addOfficeCounts`
 
-This function should take an array of MP objects and add an `officeCount` property to each mp object with a count of their offices (the length of offices array)
+This function should take an array of MP objects and add an `officeCount` property to each MP object with a count of their offices (the length of offices array).
 
 ```js
 addOfficeCounts([
@@ -240,7 +240,8 @@ removeOffices([
     office: [
       {
         dept: '',
-        position: 'The Secretary of State for Business, Energy and Industrial Strategy ',
+        position:
+          'The Secretary of State for Business, Energy and Industrial Strategy ',
         from_date: '2016-07-14',
         to_date: '9999-12-31',
       },
@@ -323,7 +324,8 @@ getTories([
     office: [
       {
         dept: '',
-        position: 'The Secretary of State for Business, Energy and Industrial Strategy ',
+        position:
+          'The Secretary of State for Business, Energy and Industrial Strategy ',
         from_date: '2016-07-14',
         to_date: '9999-12-31',
       },
@@ -423,7 +425,7 @@ getTories([
 
 ## getMPsofAnyParty
 
-This function will take an array of mp objects and a specific party. The function should return an array of all the mps of the given party.
+This function will take an array of MP objects and a specific party. The function should return an array of all the mps of the given party.
 
 ```js
 getMPsofAnyParty(
@@ -479,7 +481,8 @@ getMPsofAnyParty(
       office: [
         {
           dept: '',
-          position: 'The Secretary of State for Business, Energy and Industrial Strategy ',
+          position:
+            'The Secretary of State for Business, Energy and Industrial Strategy ',
           from_date: '2016-07-14',
           to_date: '9999-12-31',
         },
@@ -530,7 +533,7 @@ getMPsofAnyParty(
   ],
   'Labour'
 );
-// should return an array of all the Labour objects
+// should return an array of all the Labour MP objects
 ```
 
 ## `tallyMPsOfEachParty`
@@ -590,7 +593,8 @@ tallyMPsOfEachParty([
     office: [
       {
         dept: '',
-        position: 'The Secretary of State for Business, Energy and Industrial Strategy ',
+        position:
+          'The Secretary of State for Business, Energy and Industrial Strategy ',
         from_date: '2016-07-14',
         to_date: '9999-12-31',
       },
