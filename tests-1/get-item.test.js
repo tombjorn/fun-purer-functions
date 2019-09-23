@@ -1,4 +1,4 @@
-function getItem() {}
+function getItem(arr, index) {}
 
 /*
 
