@@ -6,7 +6,7 @@ Implement the following functions using TDD ...
 
 This function should take
 
-- one array of primitive values
+- one array of _primitive_ values
 
 The function should return an array of the same length with the items in reverse order. The function should work similarly to `Array.reverse()` however it should _not_ mutate the original array. And, of course, you may **not** use `Array.reverse()` in your implementation
 
