@@ -51,7 +51,7 @@ In this series of katas you are forced to think about managing more heavily nest
 
 ## `addFullName`
 
-- This function should take an array of MP objects and return an array of MP objects with an additional `fullName` property added to each MP object. The `fullName` property is just the `firstName` property value added together with the `lastName` property value (separated by a space).
+- This function should take an array of MP objects and return an array of MP objects with an additional `fullName` property added in each MP object. The `fullName` property is just the `firstName` property value added together with the `lastName` property value (separated by a space).
 
 - As with previous katas you must test to ensure that the _original array_ and the _original objects_ inside the input array are **not mutated**
 
@@ -159,7 +159,7 @@ addFirstAndLastNames([
 
 ## `addOfficeCounts`
 
-- This function should take an array of MP objects and add an `officeCount` property to each MP object with a count of their offices (the length of offices array property for each MP).
+- This function should take an array of MP objects and add an `officeCount` property to each new MP object with a count of their offices (the length of the offices array property for each MP).
 
 ```js
 addOfficeCounts([
@@ -261,6 +261,8 @@ addOfficeCounts([
 ## `removeOffices`
 
 This function should take an array of MP objects and return an array of MP objects of the same length but with the office property removed from each mp object.
+
+- Take special care in this kata to ensure the original MP objects are not being _mutated_
 
 ```js
 removeOffices([
