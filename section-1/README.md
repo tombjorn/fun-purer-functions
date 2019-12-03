@@ -1,4 +1,4 @@
-# Making pure functions
+# Making purer functions
 
 Implement the following functions using TDD ...
 
