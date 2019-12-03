@@ -4,7 +4,7 @@ Implement the following functions using TDD ...
 
 ## `reverseItems`
 
-This function should take
+This function should take as its arguments:
 
 - one array of _primitive_ values
 
@@ -21,7 +21,7 @@ reverseItem(letters); // should return ['c','b','a'];
 
 ## `removePersonWithID`
 
-This function will take:
+This function should take as its arguments:
 
 - an array of people objects, each with `id` and `name` properties
 - an id of the person that needs to be removed
@@ -59,7 +59,7 @@ person 4 has been removed */
 
 ## `updateTasks`
 
-This function should take
+This function should take as its arguments:
 
 - a person object (with name and tasks properties)
 - one or more new tasks
@@ -84,7 +84,7 @@ updateTasks(
 
 ## `raiseSalaries`
 
-This function will take
+This function should take as its arguments:
 
 - a an array representing a list of employees and a number (representing a percentage increase)
 - each employee will be represented as an object with a `name` and a `salary` property
@@ -112,7 +112,7 @@ raiseSalaries(
 
 ## `cloneObject`
 
-This function should take
+This function should take as its arguments:
 
 - a target object (values are only primitives)
 - a source object (values are only primitives)
@@ -123,7 +123,7 @@ The function should create a new object with all the key-value pairs from the so
 
 ---
 
-This function should take:
+This function should take as its arguments:
 
 - an array (of primitives only)
 - a start index (optional)
