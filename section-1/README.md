@@ -17,6 +17,8 @@ reverseItem(letters); // should return ['c','b','a'];
 // letters still ['a', 'b', 'c']
 ```
 
+---
+
 ## `removePersonWithID`
 
 This function will take:
@@ -53,6 +55,8 @@ removePersonWithID(
 person 4 has been removed */
 ```
 
+---
+
 ## `updateTasks`
 
 This function should take
@@ -75,6 +79,8 @@ updateTasks(
 }
 */
 ```
+
+---
 
 ## `raiseSalaries`
 
@@ -102,6 +108,8 @@ raiseSalaries(
 */
 ```
 
+---
+
 ## `cloneObject`
 
 This function should take
@@ -112,6 +120,8 @@ This function should take
 The function should create a new object with all the key-value pairs from the source object copied over into a copy of the target object. This function has identical functionality to [`Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 
 ## `getFragment`
+
+---
 
 This function should take:
 
