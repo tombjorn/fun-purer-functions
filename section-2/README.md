@@ -11,61 +11,57 @@ Implement the following functions, be sure to follow the README and devise test 
 
 Each of the functions below can be thought as a single unit. You can write your tests in `mps.test.js`
 
-## `addFirstAndLastNames`
+## Representing an MP
 
-This function should take an array of MP objects and return an array of MP objects with an additional `firstName` and `lastName` property added to each MP object:
+In this series of katas you are forced to think about managing more heavily nested data structures. For example, in this series of katas, a typical MP object will be represented as an object in the following way:
+
+```json
+{
+  "member_id": "41460",
+  "person_id": "10259",
+  "name": "David Hanson",
+  "party": "Labour",
+  "constituency": "Delyn",
+  "office": [
+    {
+      "dept": "Panel of Chairs",
+      "position": "Member",
+      "from_date": "2017-06-22",
+      "to_date": "9999-12-31"
+    },
+    {
+      "dept": "Justice Committee",
+      "position": "Member",
+      "from_date": "2017-09-11",
+      "to_date": "9999-12-31"
+    },
+    {
+      "dept": "Intelligence and Security Committee of Parliament",
+      "position": "Member",
+      "from_date": "2017-11-16",
+      "to_date": "9999-12-31"
+    }
+  ]
+}
+```
+
+---
+
+# Functions to implement
+
+## `addFullName`
+
+- This function should take an array of MP objects and return an array of MP objects with an additional `fullName` property added to each MP object. The `fullName` property is just the `firstName` property value added together with the `lastName` property value (separated by a space).
+
+- As with previous katas you must test to ensure that the _original array_ and the _original objects_ inside the input array are **not mutated**
+
+- You must also test to ensure that the function is always returning a **new array** containing **new objects**
 
 ```js
 addFirstAndLastNames([
   {
-    member_id: '41899',
-    person_id: '25227',
-    name: 'Robert Jenrick',
-    party: 'Conservative',
-    constituency: 'Newark',
-    office: [
-      {
-        dept: '',
-        position: 'The Exchequer Secretary',
-        from_date: '2018-01-09',
-        to_date: '9999-12-31',
-      },
-    ],
-  },
-  {
-    member_id: '41679',
-    person_id: '25406',
-    name: 'Carol Monaghan',
-    party: 'Scottish National Party',
-    constituency: 'Glasgow North West',
-    office: [
-      {
-        dept: '',
-        position: 'Shadow SNP Spokesperson (Armed Forces and Veterans)',
-        from_date: '2017-06-20',
-        to_date: '9999-12-31',
-      },
-      {
-        dept: '',
-        position: 'Shadow SNP Spokesperson (Education)',
-        from_date: '2017-06-20',
-        to_date: '9999-12-31',
-      },
-      {
-        dept: 'Science and Technology Committee (Commons)',
-        position: 'Member',
-        from_date: '2017-12-04',
-        to_date: '9999-12-31',
-      },
-    ],
-  },
-]);
-/* should return
-[
-  {
     'member_id': '41899',
     'person_id': '25227',
-    'name' : 'Robert Jenrick',
     'firstName' : 'Robert',
     'lastName' : 'Jenrick'
     'party': 'Conservative',
@@ -82,7 +78,55 @@ addFirstAndLastNames([
   {
     'member_id': '41679',
     'person_id': '25406',
-    'name' : 'Carol Monaghan',
+    'firstName' : 'Carol',
+    'lastName' : 'Monaghan'
+    'party': 'Scottish National Party',
+    'constituency': 'Glasgow North West',
+    'office': [
+      {
+        'dept': '',
+        'position': 'Shadow SNP Spokesperson (Armed Forces and Veterans)',
+        'from_date': '2017-06-20',
+        'to_date': '9999-12-31'
+      },
+      {
+        'dept': '',
+        'position': 'Shadow SNP Spokesperson (Education)',
+        'from_date': '2017-06-20',
+        'to_date': '9999-12-31'
+      },
+      {
+        'dept': 'Science and Technology Committee (Commons)',
+        'position': 'Member',
+        'from_date': '2017-12-04',
+        'to_date': '9999-12-31'
+      }
+    ]
+  }]
+);
+/* should return
+[
+  {
+    'member_id': '41899',
+    'person_id': '25227',
+    'fullName' : 'Robert Jenrick',
+    'firstName' : 'Robert',
+    'lastName' : 'Jenrick'
+    'party': 'Conservative',
+    'constituency': 'Newark',
+    'office': [
+      {
+        'dept': '',
+        'position': 'The Exchequer Secretary',
+        'from_date': '2018-01-09',
+        'to_date': '9999-12-31'
+      }
+    ]
+  },
+  {
+    'member_id': '41679',
+    'person_id': '25406',
+    'fullName' : 'Carol Monaghan',
     'firstName' : 'Carol',
     'lastName' : 'Monaghan'
     'party': 'Scottish National Party',
@@ -111,9 +155,11 @@ addFirstAndLastNames([
 */
 ```
 
+---
+
 ## `addOfficeCounts`
 
-This function should take an array of MP objects and add an `officeCount` property to each MP object with a count of their offices (the length of offices array).
+- This function should take an array of MP objects and add an `officeCount` property to each MP object with a count of their offices (the length of offices array property for each MP).
 
 ```js
 addOfficeCounts([
@@ -210,6 +256,8 @@ addOfficeCounts([
 */
 ```
 
+---
+
 ## `removeOffices`
 
 This function should take an array of MP objects and return an array of MP objects of the same length but with the office property removed from each mp object.
@@ -266,6 +314,8 @@ removeOffices([
 ]
 */
 ```
+
+---
 
 ## getMPsofAnyParty
 
@@ -380,6 +430,8 @@ getMPsofAnyParty(
 // should return an array of all the Labour MP objects
 ```
 
+---
+
 ## `tallyMPsOfEachParty`
 
 This function should return an object of key-value pairs for each party and the number of MPs in each party in the array i.e.
@@ -492,3 +544,5 @@ should return
 { "Labour" : 1, "Conservative" : 3, "Scottish National Party" : 1 }
 */
 ```
+
+---
