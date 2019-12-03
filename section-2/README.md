@@ -13,7 +13,7 @@ Each of the functions below can be thought as a single unit. You can write your 
 
 ## Representing an MP
 
-In this series of katas you are forced to think about managing more heavily nested data structures. For example, in this series of katas, a typical MP object will be represented as an object in the following way:
+In this series of katas you are forced to think about managing more heavily nested data structures. For example, in this series of katas, an MP will be represented as an object in the following way:
 
 ```json
 {
