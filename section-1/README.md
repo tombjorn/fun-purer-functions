@@ -12,9 +12,10 @@ The function should return an array of the same length with the items in reverse
 
 ```js
 const letters = ['a', 'b', 'c'];
-reverseItem(letters); // should return ['c','b','a'];
+reverseItem(letters);
+// should return ['c','b','a'];
 
-// letters still ['a', 'b', 'c']
+// letters not mutated so should still be ['a', 'b', 'c']
 ```
 
 ---
@@ -29,19 +30,17 @@ This function should take as its arguments:
 This function should return a new array of new people objects with but with the person of the given id removed.
 
 ```js
-removePersonWithID(
-  [
-    { id: 1, name: 'foluso' },
-    { id: 2, name: 'suneet' },
-    { id: 3, name: 'paul r' },
-    { id: 4, name: 'jonny' },
-    { id: 5, name: 'anat' },
-    { id: 6, name: 'sam' },
-    { id: 7, name: 'tom' },
-    { id: 8, name: 'alex' },
-  ],
-  4
-);
+const tutors = [
+  { id: 1, name: 'foluso' },
+  { id: 2, name: 'suneet' },
+  { id: 3, name: 'paul r' },
+  { id: 4, name: 'liam' },
+  { id: 5, name: 'anat' },
+  { id: 6, name: 'sam' },
+  { id: 7, name: 'tom' },
+  { id: 8, name: 'alex' },
+];
+removePersonWithID(tutors, 4);
 /* should return
 [
   { id: 1, name: 'foluso' },
