@@ -85,7 +85,7 @@ updateTasks(
 
 This function should take as its arguments:
 
-- a an array representing a list of employees and a number (representing a percentage increase)
+- an array representing a list of employees and a number (representing a percentage increase)
 - each employee will be represented as an object with a `name` and a `salary` property
 
 It should return a new array of employees with their salary now increased by the given percentage increase. The new salaries should be rounded up to the nearest integer. None of the original employee objects should be mutated.
