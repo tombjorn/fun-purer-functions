@@ -10,9 +10,17 @@ As with previous days, you will need to set up a few things first:
 
 3. Update the scripts section of your `package.json` so you can get Jest to run your test files
 
+## Pre-sprint
+
+Look through the **pre-sprint** section and have a go at fixing the exercises in order to ensure they pass all the tests and then answer the questions in `index.md`. These tasks will serve as a good immediate way of assessing your understanding after the lecture and will help to orient you towards the more independent tasks in the main sprint.
+
+---
+
+## Main sprint
+
 Implement the following functions using TDD ...
 
-## `reverseItems`
+### `reverseItems`
 
 This function should take as its arguments:
 
@@ -30,7 +38,7 @@ reverseItem(letters);
 
 ---
 
-## `removePersonWithID`
+### `removePersonWithID`
 
 This function should take as its arguments:
 
@@ -66,7 +74,7 @@ person 4 has been removed */
 
 ---
 
-## `updateTasks`
+### `updateTasks`
 
 This function should take as its arguments:
 
@@ -91,7 +99,7 @@ updateTasks(
 
 ---
 
-## `raiseSalaries`
+### `raiseSalaries`
 
 This function should take as its arguments:
 
@@ -119,7 +127,7 @@ raiseSalaries(
 
 ---
 
-## `cloneObject`
+### `cloneObject`
 
 This function should take as its arguments:
 
@@ -128,7 +136,7 @@ This function should take as its arguments:
 
 The function should create a new object with all the key-value pairs from the source object copied over into a copy of the target object. This function has identical functionality to [`Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 
-## `getFragment`
+### `getFragment`
 
 ---
 
