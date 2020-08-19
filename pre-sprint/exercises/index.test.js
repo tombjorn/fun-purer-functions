@@ -53,7 +53,7 @@ describe('impure functions', () => {
     test('will join 2 arrays together', () => {
       expect(joinArrays(['a', 'b'], ['c', 'd'])).toEqual(['a', 'b', 'c', 'd']);
     });
-    test('will return same array when 1 array is passed', () => {
+    test('will returns an identical array to array 1 when no 2nd array passed', () => {
       expect(joinArrays(['a', 'b'])).toEqual(['a', 'b']);
     });
     test('will return a new array', () => {
