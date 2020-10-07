@@ -20,24 +20,6 @@ Look through the **pre-sprint** section and have a go at fixing the exercises in
 
 Implement the following functions using TDD ...
 
-### `reverseItems`
-
-This function should take as its arguments:
-
-- one array of _primitive_ values
-
-The function should return an array of the same length with the items in reverse order. The function should work similarly to `Array.reverse()` however it should _not_ mutate the original array. And, of course, you may **not** use `Array.reverse()` in your implementation
-
-```js
-const letters = ['a', 'b', 'c'];
-reverseItem(letters);
-// should return ['c','b','a'];
-
-// letters not mutated so should still be ['a', 'b', 'c']
-```
-
----
-
 ### `removePersonWithID`
 
 This function should take as its arguments:
