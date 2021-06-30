@@ -12,26 +12,26 @@ These questions are _not_ part of an assessment and nor or are they an attempt t
 
 ```js
 const phoneBook = {
-  tom : 0731415926
-  izzi : 0727182920
-  paulr : 079012312
-}
+  tom: 0731415926,
+  izzi: 0727182920,
+  paulr: 079012312
+};
 
-const userName = prompt('Hello there, what is your username please ?');
+const userName = 'tom';
 const phoneNumber = phoneBook.userName;
 
-console.log(`Ahh hello there ${userName}, looks like your phone number is ${phoneBook.userName}`);
+console.log(
+  `Ahh hello there ${userName}, looks like your phone number is ${phoneBook.userName}`
+);
 ```
 
-In the above snippet, `prompt` asks a user for their name and then afterwards there is a log to print out the user's name and their phone number that is contained inside in the `phoneBook` object.
-
-After inputting the string `"tom"` the following is printed:
+After running the above snippet, the following is logged to the console:
 
 `Ahh hello there tom, looks like your phone number is undefined`
 
 Ooops, looks like the `phoneNumber` isn't being printed, instead we're getting back `undefined`.
 
-Can you work out how to fix this issue so the actual `phoneNumber` is printed.
+Can you work out how to fix this issue so the actual `phoneNumber` is printed?
 
 ---
 
@@ -48,7 +48,7 @@ it('comparing 2 arrays', () => {
 });
 ```
 
-Just 1 of the test cases above will **pass** ✅ and another will **fail** ❌ - can you explain which way around it will be and \_critically\* why ?
+Just 1 of the test cases above will **pass** ✅ and another will **fail** ❌ - can you explain which way around it will be and _critically_ why?
 
 ---
 
@@ -81,7 +81,7 @@ const people = [
   { name: 'foluso' },
   { name: 'liam' },
   { name: 'dave' },
-  { name: 'suneet' },
+  { name: 'suneet' }
 ];
 
 const updatedPeople = people.map((person) => {
