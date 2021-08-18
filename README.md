@@ -176,7 +176,7 @@ const celebs = [
   {
     name: 'Matey Terry',
     yearlyCumulativeSpend: '£36',
-    puchaseToday: {
+    purchaseToday: {
       item: 'Cola bottles',
       costPerItem: '£4',
       amountBought: 81,
