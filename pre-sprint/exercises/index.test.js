@@ -1,3 +1,4 @@
+const { expect } = require('@jest/globals');
 const {
   getLastItem,
   removeItem,
@@ -32,7 +33,7 @@ describe('impure functions', () => {
       expect(input).toEqual(['a', 'b', 'c']);
     });
   });
-  describe('switchKey()', () => {
+  describe.only('switchKey()', () => {
     test('keys in object are switched around', () => {
       expect(switchKey({ name: 'Anat' }, 'name', 'nom')).toEqual({
         nom: 'Anat',
@@ -47,6 +48,11 @@ describe('impure functions', () => {
       const input = { name: 'Anat' };
       switchKey(input, 'name', 'nom');
       expect(input).toEqual({ name: 'Anat' });
+    });
+    test('unrelated keys are also copied to new object', () => {
+      expect(
+        switchKey({ move: 'kickflip', rating: 'radical' }, 'move', 'trick')
+      ).toEqual({ trick: 'kickflip', rating: 'radical' });
     });
   });
   describe('joinArrays()', () => {
