@@ -32,7 +32,7 @@ describe('impure functions', () => {
       expect(input).toEqual(['a', 'b', 'c']);
     });
   });
-  describe.only('switchKey()', () => {
+  describe('switchKey()', () => {
     test('keys in object are switched around', () => {
       expect(switchKey({ name: 'Anat' }, 'name', 'nom')).toEqual({
         nom: 'Anat',
