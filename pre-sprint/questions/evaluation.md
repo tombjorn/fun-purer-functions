@@ -12,9 +12,9 @@ These questions are _not_ part of an assessment and nor or are they an attempt t
 
 ```js
 const phoneBook = {
-  tom: 0731415926,
-  izzi: 0727182920,
-  paulr: 079012312
+  tom: '0731415926',
+  izzi: '0727182920',
+  paulr: '079012312'
 };
 
 const userName = 'tom';
