@@ -12,7 +12,7 @@ As with previous days, you will need to set up a few things first:
 
 ## Pre-sprint
 
-Look through the **pre-sprint** section and have a go at fixing the exercises in order to ensure they pass all the tests and then answer the questions in `evaluation.md`. These tasks will serve as a good immediate way of assessing your understanding after the lecture and will help to orient you towards the more independent tasks in the main sprint.
+Look through the **pre-sprint** section and have a go at fixing the exercises in order to ensure they pass all the tests and then answer the questions in `pre-sprint/questions/evaluation.md`. These tasks will serve as a good immediate way of assessing your understanding after the lecture and will help to orient you towards the more independent tasks in the main sprint.
 
 ---
 
