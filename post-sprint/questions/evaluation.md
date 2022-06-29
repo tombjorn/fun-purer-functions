@@ -1,8 +1,8 @@
 # Value vs Reference
 
-## Post lecture evaluation
+## Post sprint evaluation
 
-Below are a series of scenarios and questions designed to make you _think_ and _engage_ more actively with the content you have just seen in your lecture. An essential prerequisite to writing any good code is being able to learn well and thoroughly - and in order to do this you need to interrogate what you are learning properly. Thinking critically is something we are going to encourage you to do from the very beginning and these questions are designed to help you with the process of rigorous analytical thinking.
+Below are a series of scenarios and questions designed to make you _think_ and _engage_ more actively with the content you have been working with. An essential prerequisite to writing any good code is being able to learn well and thoroughly - and in order to do this you need to interrogate what you are learning properly. Thinking critically is something we are going to encourage you to do from the very beginning and these questions are designed to help you with the process of rigorous analytical thinking.
 
 These questions are _not_ part of an assessment and nor or are they an attempt to trip you up or to catch you out. A well posed question ( we hope ) is one that is designed to make you think. And if you are struggling to answer the questions below - well, that's good, it means you are on the verge of learning something new :)
 
@@ -14,7 +14,7 @@ These questions are _not_ part of an assessment and nor or are they an attempt t
 const phoneBook = {
   tom: '0731415926',
   izzi: '0727182920',
-  paulr: '079012312'
+  paulr: '079012312',
 };
 
 const userName = 'tom';
@@ -65,14 +65,12 @@ const sortedAlpha = sortList(jumbledAlpha);
 console.log(sortedAlpha === jumbledAlpha);
 ```
 
-A student embarks upon the task of implementing a function that can sort a list of items into alphabetical order. At the end there is a `console.log` with a `===` comparison between `sortedAlpha` and `jumbledAlpha`
+You embark upon the task of implementing a function that can sort a list of items into alphabetical order. At the end there is a `console.log` with a `===` comparison between `sortedAlpha` and `jumbledAlpha`
 
 What will be printed when this log runs - `true` or `false` ?
 OK so there is a fifty-fifty chance of guessing the correct answer in the above scenario, can you justify your answer.
 
-See if you can go through the code line by line to work it out.
-
----
+**See if you can go through the code line by line to work it out.**
 
 ### Scenario 4
 
@@ -81,7 +79,7 @@ const people = [
   { name: 'foluso' },
   { name: 'liam' },
   { name: 'dave' },
-  { name: 'suneet' }
+  { name: 'suneet' },
 ];
 
 const updatedPeople = people.map((person) => {
@@ -112,6 +110,6 @@ Above shows the beginnings of someone's implementation for a function called `fo
 formatPeople([]);
 ```
 
-the student is complaining that the first `if` block is **not** being executed. Can you work out what is going on here ?
+they find that the first `if` block is **not** being executed. Can you work out what is going on here ?
 
 ---
