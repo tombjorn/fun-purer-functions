@@ -27,14 +27,14 @@ This function should return a new array of new people objects with but with the 
 
 ```js
 const tutors = [
-	{ id: 1, name: "foluso" },
-	{ id: 2, name: "suneet" },
-	{ id: 3, name: "paul r" },
-	{ id: 4, name: "liam" },
-	{ id: 5, name: "anat" },
-	{ id: 6, name: "sam" },
-	{ id: 7, name: "tom" },
-	{ id: 8, name: "alex" },
+  { id: 1, name: 'foluso' },
+  { id: 2, name: 'suneet' },
+  { id: 3, name: 'paul r' },
+  { id: 4, name: 'liam' },
+  { id: 5, name: 'anat' },
+  { id: 6, name: 'sam' },
+  { id: 7, name: 'tom' },
+  { id: 8, name: 'alex' },
 ];
 removePersonWithID(tutors, 4);
 /* should return
@@ -63,12 +63,12 @@ It should return a new array of employees with their salary now increased by the
 
 ```js
 raiseSalaries(
-	[
-		{ name: "Alice", salary: 3000 },
-		{ name: "Bob", salary: 2000 },
-		{ name: "Vel", salary: 4500 },
-	],
-	10
+  [
+    { name: 'Alice', salary: 3000 },
+    { name: 'Bob', salary: 2000 },
+    { name: 'Vel', salary: 4500 },
+  ],
+  10
 );
 /* should return 
 [{ name: 'Alice', salary: 3300 },
@@ -91,9 +91,9 @@ The function should return a new person object with a new tasks properties. The 
 
 ```js
 updateTasks(
-	{ name: "Anat", tasks: ["feed Schnitzel", "Go to pottery"] },
-	"read books",
-	"tidy room"
+  { name: 'Anat', tasks: ['feed Schnitzel', 'Go to pottery'] },
+  'read books',
+  'tidy room'
 );
 /* should return 
 {
@@ -116,23 +116,6 @@ The function should return the target object with all the key-value pairs from t
 
 ---
 
-### `mergeArrays`
-
-Should take an array of arrays and return a flattened, single, new array, with the entries from each array returned in alternating order. If the arrays are not the same length, the shorter arrays should add undefined to the merged array until all values have been merged.
-
-```js
-mergeArrays([
-	[1, 2, 3],
-	["a", "b", "c", "d"],
-]);
-// [1, 'a', 2, 'b', 3, 'c', undefined, 'd']
-
-mergeArrays([[1, 2, 3], ["a"], [true, false]]);
-// [1, 'a', true, 2, undefined, false, 3]
-```
-
----
-
 ### `getFragment`
 
 This function should take as its arguments:
@@ -151,42 +134,42 @@ Write a function that takes an array of pop star objects with information about 
 
 ```js
 const celebs = [
-	{
-		name: "Beyonce Bowls",
-		yearlyCumulativeSpend: "£44",
-		purchaseToday: {
-			item: "White mice",
-			costPerItem: "£3",
-			amountBought: 17,
-		},
-	},
-	{
-		name: "Kray-Z",
-		yearlyCumulativeSpend: "£28",
-		purchaseToday: {
-			item: "Flying saucers",
-			costPerItem: "£2",
-			amountBought: 28,
-		},
-	},
-	{
-		name: "Matey Terry",
-		yearlyCumulativeSpend: "£36",
-		purchaseToday: {
-			item: "Cola bottles",
-			costPerItem: "£4",
-			amountBought: 81,
-		},
-	},
-	{
-		name: "Justine Klimberbake",
-		yearlyCumulativeSpend: "£30",
-		purchaseToday: {
-			item: "Giant jelly snakes",
-			costPerItem: "£103",
-			amountBought: 2,
-		},
-	},
+  {
+    name: 'Beyonce Bowls',
+    yearlyCumulativeSpend: '£44',
+    purchaseToday: {
+      item: 'White mice',
+      costPerItem: '£3',
+      amountBought: 17,
+    },
+  },
+  {
+    name: 'Kray-Z',
+    yearlyCumulativeSpend: '£28',
+    purchaseToday: {
+      item: 'Flying saucers',
+      costPerItem: '£2',
+      amountBought: 28,
+    },
+  },
+  {
+    name: 'Matey Terry',
+    yearlyCumulativeSpend: '£36',
+    purchaseToday: {
+      item: 'Cola bottles',
+      costPerItem: '£4',
+      amountBought: 81,
+    },
+  },
+  {
+    name: 'Justine Klimberbake',
+    yearlyCumulativeSpend: '£30',
+    purchaseToday: {
+      item: 'Giant jelly snakes',
+      costPerItem: '£103',
+      amountBought: 2,
+    },
+  },
 ];
 
 calculateConfectioneryCosts(celebs);
@@ -221,26 +204,6 @@ reduceConfectioneryCosts(celebs);
 
 ---
 
-### Reimplementation
-
-Reimplement the following higher-order JavaScript array functions. Each function should take as arguments an array and an iteratee function. They should produce the same output and have the same effect on the input as the Javascript version. (And no, you can't just use the JavaScript version...)
-
-#### map()
-
-#### filter()
-
-#### every()
-
-#### some()
-
-#### includes()
-
-#### slice()
-
-#### splice()
-
----
-
 ## Post-sprint
 
-Look through the **post-sprint** section and have a go at fixing the exercises in order to ensure they pass all the tests and then answer the questions in `post-sprint/questions/evaluation.md`. These tasks will serve as a good immediate way of assessing your understanding after the lecture and working on the main sprint.
+Look through the **post-sprint** section and have a go at fixing the `exercises` in order to ensure they pass all the tests and then answer the questions in `post-sprint/questions/evaluation.md`. These tasks will serve as a good immediate way of assessing your understanding after the lecture and working on the main sprint.
