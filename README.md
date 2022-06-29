@@ -206,4 +206,4 @@ reduceConfectioneryCosts(celebs);
 
 ## Post-sprint
 
-Look through the **post-sprint** section and have a go at fixing the exercises in order to ensure they pass all the tests and then answer the questions in `post-sprint/questions/evaluation.md`. These tasks will serve as a good immediate way of assessing your understanding after the lecture and working on the main sprint.
+Look through the **post-sprint** section and have a go at fixing the `exercises` in order to ensure they pass all the tests and then answer the questions in `post-sprint/questions/evaluation.md`. These tasks will serve as a good immediate way of assessing your understanding after the lecture and working on the main sprint.
