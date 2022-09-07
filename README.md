@@ -12,42 +12,24 @@ As with previous days, you will need to set up a few things first:
 
 ---
 
-## Main sprint
+## Core Tasks
 
 Implement the following functions using TDD ...
 
-### `removePersonWithID`
+### `removeLastNumber`
 
-This function should take as its arguments:
+This function should as its only argument take:
 
-- an array of people objects, each with `id` and `name` properties
-- an id of the person that needs to be removed
+- an array of numbers
 
-This function should return a new array of new people objects with but with the person of the given id removed.
+This function should return a new array of numbers with the last one removed
 
 ```js
-const tutors = [
-  { id: 1, name: 'foluso' },
-  { id: 2, name: 'suneet' },
-  { id: 3, name: 'paul r' },
-  { id: 4, name: 'liam' },
-  { id: 5, name: 'anat' },
-  { id: 6, name: 'sam' },
-  { id: 7, name: 'tom' },
-  { id: 8, name: 'alex' },
-];
-removePersonWithID(tutors, 4);
-/* should return
-[
-  { id: 1, name: 'foluso' },
-  { id: 2, name: 'suneet' },
-  { id: 3, name: 'paul r' },
-  { id: 5, name: 'anat' },
-  { id: 6, name: 'sam' },
-  { id: 7, name: 'tom },
-  { id: 8, name: 'alex' },
-]
-person 4 has been removed */
+removeLastNumber([1, 2, 3, 4]);
+
+/* should return 
+[1,2,3]
+*/
 ```
 
 ---
@@ -64,9 +46,9 @@ It should return a new array of employees with their salary now increased by the
 ```js
 raiseSalaries(
   [
-    { name: 'Alice', salary: 3000 },
-    { name: 'Bob', salary: 2000 },
-    { name: 'Vel', salary: 4500 },
+    { name: "Alice", salary: 3000 },
+    { name: "Bob", salary: 2000 },
+    { name: "Vel", salary: 4500 },
   ],
   10
 );
@@ -91,9 +73,9 @@ The function should return a new person object with a new tasks properties. The 
 
 ```js
 updateTasks(
-  { name: 'Anat', tasks: ['feed Schnitzel', 'Go to pottery'] },
-  'read books',
-  'tidy room'
+  { name: "Anat", tasks: ["feed Schnitzel", "Go to pottery"] },
+  "read books",
+  "tidy room"
 );
 /* should return 
 {
@@ -104,6 +86,8 @@ updateTasks(
 ```
 
 ---
+
+## Further Tasks
 
 ### `cloneObject`
 
@@ -116,18 +100,6 @@ The function should return the target object with all the key-value pairs from t
 
 ---
 
-### `getFragment`
-
-This function should take as its arguments:
-
-- an array (of primitives only)
-- a start index (optional)
-- an end index (optional)
-
-The function should return a **new array** with items from the old array taken from the start index and up to but not including the end index. This function has identical functionality to [`Array.slice()`](https://developer.mozilla.org/en-us/docs/web/javascript/reference/global_objects/array/slice). You should use the MDN documentation as a guide to helping you decide what functionality you need to implement for this function. And, of course, you cannot use `Array.slice()` in your own implementation.
-
----
-
 ### `calculateConfectioneryCosts`
 
 Write a function that takes an array of pop star objects with information about the amount they have spent so far this year on confectionery at the cinema, and how much they have spent on today's visit. It should return a **new array** of **new objects** with a property for the pop star's `name` and the `yearlyCumulativeSpend` property updated to include today's costs.
@@ -135,38 +107,38 @@ Write a function that takes an array of pop star objects with information about 
 ```js
 const celebs = [
   {
-    name: 'Beyonce Bowls',
-    yearlyCumulativeSpend: '£44',
+    name: "Beyonce Bowls",
+    yearlyCumulativeSpend: "£44",
     purchaseToday: {
-      item: 'White mice',
-      costPerItem: '£3',
+      item: "White mice",
+      costPerItem: "£3",
       amountBought: 17,
     },
   },
   {
-    name: 'Kray-Z',
-    yearlyCumulativeSpend: '£28',
+    name: "Kray-Z",
+    yearlyCumulativeSpend: "£28",
     purchaseToday: {
-      item: 'Flying saucers',
-      costPerItem: '£2',
+      item: "Flying saucers",
+      costPerItem: "£2",
       amountBought: 28,
     },
   },
   {
-    name: 'Matey Terry',
-    yearlyCumulativeSpend: '£36',
+    name: "Matey Terry",
+    yearlyCumulativeSpend: "£36",
     purchaseToday: {
-      item: 'Cola bottles',
-      costPerItem: '£4',
+      item: "Cola bottles",
+      costPerItem: "£4",
       amountBought: 81,
     },
   },
   {
-    name: 'Justine Klimberbake',
-    yearlyCumulativeSpend: '£30',
+    name: "Justine Klimberbake",
+    yearlyCumulativeSpend: "£30",
     purchaseToday: {
-      item: 'Giant jelly snakes',
-      costPerItem: '£103',
+      item: "Giant jelly snakes",
+      costPerItem: "£103",
       amountBought: 2,
     },
   },
@@ -183,27 +155,20 @@ calculateConfectioneryCosts(celebs);
 */
 ```
 
-### reduceConfectioneryCosts()
+---
 
-All this positive press is leading to a boost in sales and means prices can be reduced. Write a function that takes the same celebrity informationand returns a **new array** of confectionery with new prices after a 10% price reduction. Express the new cost in pence.
+### Reimplementation
 
-```js
-//using same dataset
+Reimplement the following JavaScript array functions. Each function should take as arguments an array, have a look at the documentation for each function on MDN to see if they need more arguments. They should produce the same output and have the same effect on the input as the Javascript version. (And no, you can't just use the JavaScript version...)
 
-reduceConfectioneryCosts(celebs);
-/*
-[
-    {
-        item : 'White mice',
-        newCostPerItem : 270p
-    },
-    // ...etc.
-]
-*/
-```
+#### map()
+
+#### filter()
+
+#### splice()
 
 ---
 
 ## Post-sprint
 
-Look through the **post-sprint** section and have a go at fixing the `exercises` in order to ensure they pass all the tests and then answer the questions in `post-sprint/questions/evaluation.md`. These tasks will serve as a good immediate way of assessing your understanding after the lecture and working on the main sprint.
+Look through the **post-sprint** section and have a go at answering the questions in `post-sprint/evaluation.md`. These tasks will serve as a good immediate way of assessing your understanding after the lecture and working on the main sprint.
